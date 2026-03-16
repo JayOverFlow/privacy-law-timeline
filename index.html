@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Law Timeline — From 1890 to the Future</title>
+    <meta
+      name="description"
+      content="An interactive timeline of major global and Philippine privacy law milestones, from the 1890 Warren & Brandeis essay to modern data protection frameworks and future predictions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ═══════════ NAVIGATION ═══════════ -->
+    <nav id="main-nav">
+      <div class="nav-brand">PrivacyTimeline</div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#timeline" class="nav-link">Timeline</a></li>
+        <li><a href="#future" class="nav-link">What's Next</a></li>
+        <li><a href="#quiz" class="nav-link">Quiz</a></li>
+      </ul>
+      <button id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ═══════════ HERO SECTION ═══════════ -->
+    <section id="hero">
+      <div class="hero-particles" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          The Evolution of <span class="highlight">Privacy Law</span>
+        </h1>
+        <p class="hero-subtitle" id="hero-subtitle"></p>
+        <p class="hero-desc">
+          Explore landmark milestones that shaped how the world — and the
+          Philippines — protects personal data.
+        </p>
+        <a href="#timeline" class="btn-primary" id="hero-cta"
+          >Begin the Journey ↓</a
+        >
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="mouse"><div class="wheel"></div></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ TIMELINE SECTION ═══════════ -->
+    <section id="timeline">
+      <div class="section-header">
+        <h2>Privacy Law Milestones</h2>
+        <p>
+          From the first scholarly call for privacy rights to global data
+          protection frameworks
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line" aria-hidden="true"></div>
+
+        <!-- ── 1: 1890 ── -->
+        <div class="timeline-item left animate-on-scroll" data-milestone="1">
+          <div class="timeline-dot"><span>1890</span></div>
+          <div class="timeline-card">
+            <div class="card-badge global">🌍 Global</div>
+            <h3>Warren &amp; Brandeis: "The Right to Privacy"</h3>
+            <ul class="card-bullets">
+              <li>
+                Samuel Warren and Louis Brandeis published a groundbreaking
+                Harvard Law Review article.
+              </li>
+              <li>
+                First formal articulation of a legal "right to be let alone."
+              </li>
+              <li>
+                Laid the intellectual foundation for all modern privacy laws.
+              </li>
+            </ul>
+            <div class="card-actions">
+              <button
+                class="icon-btn why-btn"
+                data-modal="modal-1"
+                aria-label="Why this matters"
+              >
+                <span class="icon">💡</span> Why This Matters
+              </button>
+              <button
+                class="icon-btn fact-btn"
+                data-tooltip="Fun Fact: The article was partly inspired by outrage over intrusive newspaper gossip columns about Warren's wife."
+                aria-label="Fun Fact"
+              >
+                <span class="icon">🎲</span> Fun Fact
+              </button>
+              <button
+                class="icon-btn example-btn"
+                data-tooltip="Real-World Example: This essay was cited in over 100 U.S. court decisions, including the landmark Griswold v. Connecticut (1965)."
+                aria-label="Real-World Example"
+              >
+                <span class="icon">🌐</span> Real-World Example
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 2: 1948 ── -->
+        <div class="timeline-item right animate-on-scroll" data-milestone="2">
+          <div class="timeline-dot"><span>1948</span></div>
+          <div class="timeline-card">
+            <div class="card-badge global">🌍 Global</div>
+            <h3>Universal Declaration of Human Rights (Art. 12)</h3>
+            <ul class="card-bullets">
+              <li>
+                The United Nations adopted the UDHR, establishing privacy as a
+                fundamental human right.
+              </li>
+              <li>
+                Article 12 protects individuals from arbitrary interference with
+                privacy, family, and correspondence.
+              </li>
+              <li>
+                Became the moral blueprint for national constitutions worldwide.
+              </li>
+            </ul>
+            <div class="card-actions">
+              <button
+                class="icon-btn why-btn"
+                data-modal="modal-2"
+                aria-label="Why this matters"
+              >
+                <span class="icon">💡</span> Why This Matters
+              </button>
+              <button
+                class="icon-btn fact-btn"
+                data-tooltip="Fun Fact: Eleanor Roosevelt chaired the UN committee that drafted the UDHR — it was adopted with 48 votes in favor and zero against."
+                aria-label="Fun Fact"
+              >
+                <span class="icon">🎲</span> Fun Fact
+              </button>
+              <button
+                class="icon-btn example-btn"
+                data-tooltip="Real-World Example: Article 12 is referenced in nearly every national data protection law, including the Philippine Data Privacy Act."
+                aria-label="Real-World Example"
+              >
+                <span class="icon">🌐</span> Real-World Example
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 3: 1974 ── -->
+        <div class="timeline-item left animate-on-scroll" data-milestone="3">
+          <div class="timeline-dot"><span>1974</span></div>
+          <div class="timeline-card">
+            <div class="card-badge global">🌍 Global</div>
+            <h3>U.S. Privacy Act of 1974</h3>
+            <ul class="card-bullets">
+              <li>
+                Regulated how U.S. federal agencies collect, maintain, and
+                disclose personal information.
+              </li>
+              <li>
+                Gave citizens the right to access their own records and request
+                corrections.
+              </li>
+              <li>
+                Established Fair Information Practice Principles (FIPPs) still
+                used today.
+              </li>
+            </ul>
+            <div class="card-actions">
+              <button
+                class="icon-btn why-btn"
+                data-modal="modal-3"
+                aria-label="Why this matters"
+              >
+                <span class="icon">💡</span> Why This Matters
+              </button>
+              <button
+                class="icon-btn fact-btn"
+                data-tooltip="Fun Fact: The act was passed in the aftermath of the Watergate scandal, fueled by public distrust of government surveillance."
+                aria-label="Fun Fact"
+              >
+                <span class="icon">🎲</span> Fun Fact
+              </button>
+              <button
+                class="icon-btn example-btn"
+                data-tooltip="Real-World Example: A veteran used the Privacy Act to discover and correct erroneous records that had blocked their benefit claims for years."
+                aria-label="Real-World Example"
+              >
+                <span class="icon">🌐</span> Real-World Example
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 4: 1987 ── -->
+        <div class="timeline-item right animate-on-scroll" data-milestone="4">
+          <div class="timeline-dot"><span>1987</span></div>
+          <div class="timeline-card">
+            <div class="card-badge ph">🇵🇭 Philippines</div>
+            <h3>Philippine Constitution (Art. III, Sec. 3)</h3>
+            <ul class="card-bullets">
+              <li>
+                The 1987 Constitution enshrined the right to privacy of
+                communication and correspondence.
+              </li>
+              <li>
+                Prohibits wiretapping or interception of private communications
+                without lawful court order.
+              </li>
+              <li>
+                Provided the constitutional bedrock for future Philippine
+                privacy legislation.
+              </li>
+            </ul>
+            <div class="card-actions">
+              <button
+                class="icon-btn why-btn"
+                data-modal="modal-4"
+                aria-label="Why this matters"
+              >
+                <span class="icon">💡</span> Why This Matters
+              </button>
+              <button
+                class="icon-btn fact-btn"
+                data-tooltip="Fun Fact: This provision was a direct response to abuses during Martial Law (1972–1986), where surveillance was used to silence dissent."
+                aria-label="Fun Fact"
+              >
+                <span class="icon">🎲</span> Fun Fact
+              </button>
+              <button
+                class="icon-btn example-btn"
+                data-tooltip="Real-World Example: In Ople v. Torres (1998), the Supreme Court struck down a national ID system for violating this constitutional right to privacy."
+                aria-label="Real-World Example"
+              >
+                <span class="icon">🌐</span> Real-World Example
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 5: 1995 ── -->
+        <div class="timeline-item left animate-on-scroll" data-milestone="5">
+          <div class="timeline-dot"><span>1995</span></div>
+          <div class="timeline-card">
+            <div class="card-badge global">🌍 Global</div>
+            <h3>EU Data Protection Directive (95/46/EC)</h3>
+            <ul class="card-bullets">
+              <li>
+                The European Union adopted the first comprehensive data
+                protection regulation.
+              </li>
+              <li>
+                Introduced key concepts: consent, purpose limitation, and the
+                right to object.
+              </li>
+              <li>
+                Required all EU member states to enact national data protection
+                laws.
+              </li>
+            </ul>
+            <div class="card-actions">
+              <button
+                class="icon-btn why-btn"
+                data-modal="modal-5"
+                aria-label="Why this matters"
+              >
+                <span class="icon">💡</span> Why This Matters
+              </button>
+              <button
+                class="icon-btn fact-btn"
+                data-tooltip="Fun Fact: The directive banned transfer of personal data to countries without 'adequate' privacy protections — prompting the U.S. to create the Safe Harbor framework."
+                aria-label="Fun Fact"
+              >
+                <span class="icon">🎲</span> Fun Fact
+              </button>
+              <button
+                class="icon-btn example-btn"
+                data-tooltip="Real-World Example: Spain fined Google €900,000 under this directive for failing to adequately protect user data."
+                aria-label="Real-World Example"
+              >
+                <span class="icon">🌐</span> Real-World Example
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 6: 1998 ── -->
+        <div class="timeline-item right animate-on-scroll" data-milestone="6">
+          <div class="timeline-dot"><span>1998</span></div>
+          <div class="timeline-card">
+            <div class="card-badge global">🌍 Global</div>
+            <h3>U.S. COPPA — Children's Online Privacy</h3>
+            <ul class="card-bullets">
+              <li>
+                The Children's Online Privacy Protection Act required parental
+                consent for collecting data from children under 13.
+              </li>
+              <li>
+                Mandated clear privacy policies on websites directed at
+                children.
+              </li>
+              <li>
+                One of the first laws to address digital-age privacy for
+                vulnerable populations.
+              </li>
+            </ul>
+            <div class="card-actions">
+              <button
+                class="icon-btn why-btn"
+                data-modal="modal-6"
+                aria-label="Why this matters"
+              >
+                <span class="icon">💡</span> Why This Matters
+              </button>
+              <button
+                class="icon-btn fact-btn"
+                data-tooltip="Fun Fact: COPPA is why most social media platforms require users to be at least 13 years old to create an account."
+                aria-label="Fun Fact"
+              >
+                <span class="icon">🎲</span> Fun Fact
+              </button>
+              <button
+                class="icon-btn example-btn"
+                data-tooltip="Real-World Example: In 2019, YouTube paid a record $170 million FTC fine for collecting children's data without parental consent."
+                aria-label="Real-World Example"
+              >
+                <span class="icon">🌐</span> Real-World Example
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 7: 2012 ── -->
+        <div class="timeline-item left animate-on-scroll" data-milestone="7">
+          <div class="timeline-dot"><span>2012</span></div>
+          <div class="timeline-card">
+            <div class="card-badge ph">🇵🇭 Philippines</div>
+            <h3>Data Privacy Act of 2012 (RA 10173)</h3>
+            <ul class="card-bullets">
+              <li>
+                The Philippines enacted its comprehensive data protection law,
+                modeled after international standards.
+              </li>
+              <li>
+                Established rights of data subjects: access, correction,
+                erasure, and portability.
+              </li>
+              <li>
+                Imposed penalties for unauthorized processing, including
+                imprisonment and fines.
+              </li>
+            </ul>
+            <div class="card-actions">
+              <button
+                class="icon-btn why-btn"
+                data-modal="modal-7"
+                aria-label="Why this matters"
+              >
+                <span class="icon">💡</span> Why This Matters
+              </button>
+              <button
+                class="icon-btn fact-btn"
+                data-tooltip="Fun Fact: RA 10173 was signed into law on August 15, 2012, making the Philippines one of the first ASEAN countries with a comprehensive data privacy law."
+                aria-label="Fun Fact"
+              >
+                <span class="icon">🎲</span> Fun Fact
+              </button>
+              <button
+                class="icon-btn example-btn"
+                data-tooltip="Real-World Example: After the 2016 COMELEC data breach that exposed 55 million voter records, the NPC used RA 10173 to investigate and hold parties accountable."
+                aria-label="Real-World Example"
+              >
+                <span class="icon">🌐</span> Real-World Example
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 8: 2016 ── -->
+        <div class="timeline-item right animate-on-scroll" data-milestone="8">
+          <div class="timeline-dot"><span>2016</span></div>
+          <div class="timeline-card">
+            <div class="card-badge ph">🇵🇭 Philippines</div>
+            <h3>National Privacy Commission (NPC) Established</h3>
+            <ul class="card-bullets">
+              <li>
+                The NPC was created to administer and enforce the Data Privacy
+                Act of 2012.
+              </li>
+              <li>
+                Acts as the Philippines' independent body for data protection
+                oversight.
+              </li>
+              <li>
+                Handles complaints, conducts investigations, and issues
+                compliance orders.
+              </li>
+            </ul>
+            <div class="card-actions">
+              <button
+                class="icon-btn why-btn"
+                data-modal="modal-8"
+                aria-label="Why this matters"
+              >
+                <span class="icon">💡</span> Why This Matters
+              </button>
+              <button
+                class="icon-btn fact-btn"
+                data-tooltip="Fun Fact: The NPC launched 'Privacy Awareness Week' (PAW), held every May, making the Philippines one of the most active promoters of data privacy awareness in Southeast Asia."
+                aria-label="Fun Fact"
+              >
+                <span class="icon">🎲</span> Fun Fact
+              </button>
+              <button
+                class="icon-btn example-btn"
+                data-tooltip="Real-World Example: The NPC ordered a major Philippine telecom company to strengthen its data security after a breach exposed customer records in 2017."
+                aria-label="Real-World Example"
+              >
+                <span class="icon">🌐</span> Real-World Example
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 9: 2018 ── -->
+        <div class="timeline-item left animate-on-scroll" data-milestone="9">
+          <div class="timeline-dot"><span>2018</span></div>
+          <div class="timeline-card">
+            <div class="card-badge global">🌍 Global</div>
+            <h3>EU General Data Protection Regulation (GDPR)</h3>
+            <ul class="card-bullets">
+              <li>
+                The GDPR replaced the 1995 Directive, becoming the world's
+                strongest data protection law.
+              </li>
+              <li>
+                Introduced the "right to be forgotten," data portability, and
+                mandatory breach notifications.
+              </li>
+              <li>
+                Applies to any company processing EU residents' data, regardless
+                of location.
+              </li>
+            </ul>
+            <div class="card-actions">
+              <button
+                class="icon-btn why-btn"
+                data-modal="modal-9"
+                aria-label="Why this matters"
+              >
+                <span class="icon">💡</span> Why This Matters
+              </button>
+              <button
+                class="icon-btn fact-btn"
+                data-tooltip="Fun Fact: On the very first day of enforcement, Google and Facebook faced lawsuits totaling €8.8 billion from privacy activist Max Schrems."
+                aria-label="Fun Fact"
+              >
+                <span class="icon">🎲</span> Fun Fact
+              </button>
+              <button
+                class="icon-btn example-btn"
+                data-tooltip="Real-World Example: France fined Google €50 million in 2019 — the largest GDPR fine at the time — for lack of transparency and valid consent in ad personalization."
+                aria-label="Real-World Example"
+              >
+                <span class="icon">🌐</span> Real-World Example
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 10: 2020 ── -->
+        <div class="timeline-item right animate-on-scroll" data-milestone="10">
+          <div class="timeline-dot"><span>2020</span></div>
+          <div class="timeline-card">
+            <div class="card-badge global">🌍 Global</div>
+            <h3>CCPA — California Consumer Privacy Act</h3>
+            <ul class="card-bullets">
+              <li>
+                California became the first U.S. state to enact a comprehensive
+                consumer privacy law.
+              </li>
+              <li>
+                Gave consumers the right to know, delete, and opt out of the
+                sale of their personal information.
+              </li>
+              <li>
+                Inspired similar legislation in over a dozen other U.S. states.
+              </li>
+            </ul>
+            <div class="card-actions">
+              <button
+                class="icon-btn why-btn"
+                data-modal="modal-10"
+                aria-label="Why this matters"
+              >
+                <span class="icon">💡</span> Why This Matters
+              </button>
+              <button
+                class="icon-btn fact-btn"
+                data-tooltip="Fun Fact: The CCPA was largely driven by a single privacy advocate, Alastair Mactaggart, who threatened a ballot initiative — prompting the legislature to act."
+                aria-label="Fun Fact"
+              >
+                <span class="icon">🎲</span> Fun Fact
+              </button>
+              <button
+                class="icon-btn example-btn"
+                data-tooltip="Real-World Example: Sephora was fined $1.2 million in 2022 for failing to disclose it was selling customer data and ignoring opt-out requests."
+                aria-label="Real-World Example"
+              >
+                <span class="icon">🌐</span> Real-World Example
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 11: 2023 ── -->
+        <div class="timeline-item left animate-on-scroll" data-milestone="11">
+          <div class="timeline-dot"><span>2023</span></div>
+          <div class="timeline-card">
+            <div class="card-badge global">🌍 Global</div>
+            <h3>AI &amp; Privacy: Emerging Regulations</h3>
+            <ul class="card-bullets">
+              <li>
+                The EU AI Act became the world's first comprehensive law
+                governing artificial intelligence.
+              </li>
+              <li>
+                Countries worldwide began addressing AI-specific privacy risks:
+                bias, profiling, and deepfakes.
+              </li>
+              <li>
+                Sparked global debate on balancing innovation with fundamental
+                privacy rights.
+              </li>
+            </ul>
+            <div class="card-actions">
+              <button
+                class="icon-btn why-btn"
+                data-modal="modal-11"
+                aria-label="Why this matters"
+              >
+                <span class="icon">💡</span> Why This Matters
+              </button>
+              <button
+                class="icon-btn fact-btn"
+                data-tooltip="Fun Fact: Italy temporarily banned ChatGPT in 2023 over GDPR concerns — it was the first country to block a major AI tool for privacy reasons."
+                aria-label="Fun Fact"
+              >
+                <span class="icon">🎲</span> Fun Fact
+              </button>
+              <button
+                class="icon-btn example-btn"
+                data-tooltip="Real-World Example: Clearview AI was fined over €20 million by multiple EU data protection authorities for scraping billions of facial images without consent."
+                aria-label="Real-World Example"
+              >
+                <span class="icon">🌐</span> Real-World Example
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.timeline-container -->
+    </section>
+
+    <!-- ═══════════ WHAT'S NEXT SECTION ═══════════ -->
+    <section id="future">
+      <div class="section-header">
+        <h2>What's Next in Privacy?</h2>
+        <p>
+          Predictions and emerging trends shaping the future of data protection
+        </p>
+      </div>
+      <div class="future-grid">
+        <div class="future-card animate-on-scroll" id="future-card-1">
+          <div class="future-icon">🧠</div>
+          <h3>AI Governance Becomes Mandatory</h3>
+          <p>
+            By 2027, most major economies will require algorithmic impact
+            assessments and transparency reports for AI systems that process
+            personal data. Companies deploying AI will need dedicated "AI
+            Privacy Officers."
+          </p>
+        </div>
+
+        <div class="future-card animate-on-scroll" id="future-card-2">
+          <div class="future-icon">🌏</div>
+          <h3>Global Privacy Treaty</h3>
+          <p>
+            International pressure will drive a UN-backed global privacy
+            framework by 2030, harmonizing data protection standards across
+            borders and reducing compliance fragmentation for multinational
+            organizations.
+          </p>
+        </div>
+
+        <div class="future-card animate-on-scroll" id="future-card-3">
+          <div class="future-icon">🧬</div>
+          <h3>Biometric &amp; Genetic Data Laws</h3>
+          <p>
+            New laws will specifically regulate DNA databases, facial
+            recognition, and biometric identifiers. The Philippines may expand
+            RA 10173 to include strict rules on biometric processing in
+            workplaces and public spaces.
+          </p>
+        </div>
+
+        <div class="future-card animate-on-scroll" id="future-card-4">
+          <div class="future-icon">👶</div>
+          <h3>Children's Digital Rights Expansion</h3>
+          <p>
+            Expect age-verification mandates, stricter parental controls, and
+            "privacy by design for minors" standards. Social media platforms
+            will face heavy fines for algorithmic targeting of young users.
+          </p>
+        </div>
+
+        <div class="future-card animate-on-scroll" id="future-card-5">
+          <div class="future-icon">🔗</div>
+          <h3>Decentralized Identity &amp; Self-Sovereign Data</h3>
+          <p>
+            Blockchain-based digital identity systems will give individuals full
+            control over their personal data. Users will share verifiable
+            credentials without exposing underlying information.
+          </p>
+        </div>
+
+        <div class="future-card animate-on-scroll" id="future-card-6">
+          <div class="future-icon">🇵🇭</div>
+          <h3>Philippine Privacy Law 2.0</h3>
+          <p>
+            The Philippines is expected to amend the Data Privacy Act to address
+            AI, cross-border data flows, and mandatory breach reporting
+            timelines — aligning more closely with GDPR standards and ASEAN data
+            governance frameworks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ QUIZ SECTION ═══════════ -->
+    <section id="quiz">
+      <div class="section-header">
+        <h2>Test Your Knowledge</h2>
+        <p>
+          How well do you know privacy law history? Take this quick quiz to find
+          out!
+        </p>
+      </div>
+
+      <div class="quiz-container" id="quiz-container">
+        <!-- Quiz questions are injected by script.js -->
+      </div>
+
+      <div class="quiz-results" id="quiz-results" style="display: none">
+        <div class="results-card">
+          <h3>🎉 Quiz Complete!</h3>
+          <p class="score-text" id="score-text"></p>
+          <div class="score-bar-track">
+            <div class="score-bar-fill" id="score-bar-fill"></div>
+          </div>
+          <p class="score-message" id="score-message"></p>
+          <button class="btn-primary" id="quiz-retry">Try Again</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer id="footer">
+      <p>
+        Privacy Law Timeline &mdash; A Task Sheet submitted to Patrick Justin Ariado
+      </p>
+      <p class="footer-sub">Built by Duran, Ferrer, and Jao</p>
+    </footer>
+
+    <!-- ═══════════ MODALS ═══════════ -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal-content" id="modal-content">
+        <button class="modal-close" id="modal-close" aria-label="Close modal">
+          &times;
+        </button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- ═══════════ TOOLTIP ═══════════ -->
+    <div class="tooltip-popup" id="tooltip-popup" role="tooltip"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
